@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebab Frozen</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #d35400;
+        }
+        .price-list {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .price-list li {
+            margin-bottom: 10px;
+        }
+        form {
+            margin-top: 20px;
+            text-align: left;
+        }
+        input, textarea, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #d35400;
+            color: white;
+            border: none;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kebab Frozen Mini</h1>
+        <img src="kebab.jpg" alt="Kebab Frozen">
+        <ul class="price-list">
+            <li>1 pcs: Rp10.000</li>
+            <li>5 pcs: Rp45.000</li>
+            <li>10 pcs: Rp80.000</li>
+        </ul>
+
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+            <input type="text" name="nama" placeholder="Nama lengkap" required>
+            <input type="tel" name="telepon" placeholder="Nomor WhatsApp" required>
+            <select name="paket" required>
+                <option value="">Pilih Paket</option>
+                <option value="1pcs">1 pcs</option>
+                <option value="5pcs">5 pcs</option>
+                <option value="10pcs">10 pcs</option>
+            </select>
+            <textarea name="alamat" placeholder="Alamat lengkap" required></textarea>
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+
+        <footer>&copy; 2025 Kebab Frozen Mini</footer>
+    </div>
+</body>
+</html>
